@@ -58,8 +58,8 @@ body .landing-page .landing-container h1 {
 
 body .landing-page .landing-container span {
   color: #F86302;
-  -webkit-animation: changeColor 10s infinite;
-          animation: changeColor 10s infinite;
+  -webkit-animation: changeColor 5s infinite;
+          animation: changeColor 5s infinite;
 }
 
 @-webkit-keyframes changeColor {
@@ -140,6 +140,8 @@ body .landing-page .landing-container .details h1 {
 }
 
 body .landing-page nav {
+  position: relative;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,8 +166,6 @@ body .landing-page nav .right-nav {
 }
 
 body .landing-page nav .right-nav a {
-  position: relative;
-  z-index: 10;
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -214,6 +214,8 @@ body .bts {
   width: 100vw;
   height: 100vh;
   background: #fff;
+  position: relative;
+  z-index: -1;
 }
 
 body .bts h1 {
@@ -242,5 +244,29 @@ body .bts .gallery {
 body .bts .gallery img {
   margin: 30px 0 0 4%;
   width: 250px;
+}
+
+body .bts .gallery img:hover {
+  position: relative;
+  bottom: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .bts .background-box {
+  width: 70vw;
+  height: 60vh;
+  background: #101727;
+  position: relative;
+  z-index: -1;
+  bottom: 30vh;
+  left: 11%;
+  border-radius: 20px;
+}
+
+body .courses {
+  width: 100vw;
+  height: 70vh;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

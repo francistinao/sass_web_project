@@ -131,7 +131,8 @@ body {
         }
 
         nav {
-            position: fixed;
+            position: relative;
+            z-index:99;
             display: flex;
             justify-content: space-between;
             gap:20px;
@@ -222,13 +223,30 @@ body {
                     img {
                         margin:30px 0 0 4%;
                         width:250px;
-                    }
 
-                    .background-box {
-                        width:60vw;
-                        height:200px;
-                        background: $primary-color;
+                        &:hover {
+                            position: relative;
+                            bottom:15px;
+                            transition:0.5s;
+                        }
                     }
             }
+            
+            .background-box {
+                width:70vw;
+                height:60vh;
+                background: $primary-color;
+                position: relative;
+                z-index: -1;
+                bottom:30vh;
+                left:11%;
+                border-radius: 20px;
+            }
+    }
+
+    .courses {
+        width:100vw;
+        height:70vh;
+        background-color: $white_color;
     }
 }

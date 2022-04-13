@@ -1,0 +1,235 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap'); //Poppins 500
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); //Poppins 700
+
+//Roots
+$primary_color: #101727;
+$light_blue: #003F7D;
+$secondary_color: #F86302;
+$black_color: #000;
+$white_color: #fff;
+
+$header_font: 'Poppins',sans-serif;
+$header_size: 3.5rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $header_font;
+    overflow-x: hidden;
+
+    .container {
+        max-width:1200px;
+        margin:0 auto;
+    }
+
+    //Landing page
+    .landing-page {
+        position: relative;
+        z-index:-2;
+        width:100vw;
+        height:120vh;
+        background:$primary_color;
+
+        .building {
+            position: relative;
+            z-index:-1;
+            right:180px;
+            bottom:60vh;
+            width:120vw;
+        }
+
+        .landing-container {
+            position: relative;
+            z-index: 99;
+            align-items: center;
+
+            .landing-logo {
+                width: 150px;
+                margin:30px 0 5px 44%;
+            }
+
+            h1 {
+                width:50%;
+                font-size: 3.5rem;
+                font-weight: 700;
+                color: $white_color;
+                margin:0 auto;
+                text-align:center;
+                line-height:50px;
+            }
+
+            span {
+                color:$secondary_color;
+                animation: changeColor 5s infinite;
+
+                    @keyframes changeColor {
+                        0% {
+                            color:#F86302;
+                        }
+                        50% {
+                            color:#f8ae02;
+                        }
+                        100% {
+                            color:#f80202;
+                        }
+                    }
+            }
+
+            p {
+                width:60%;
+                font-size: 1.2rem;
+                color:$white_color;
+                margin:30px 0 10px 20%;
+                text-align:center;
+                line-height:25px;
+            }
+
+            input {
+                font-family: $header_font;
+                margin:20px 0 10px 25%;
+                height:40px;
+                width: 45vw;
+                text-indent: 20px;
+                border-radius:20px;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                position: relative;
+                right:95px;
+                padding:5px 20px;
+                background:$light_blue;
+                color:$white_color;
+                border:none;
+                border-radius:20px;
+                font-family:$header_font;
+                cursor: pointer;
+            }
+
+            .details {
+               position: absolute;
+               z-index:1;
+               margin:50px 0 0 25%;
+               display: flex;
+               flex-direction: space-between;
+               gap:50px;
+
+               h1 {
+                   font-size:4rem;
+               }
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+            padding: 20px 0 0 0;
+    
+            img {
+                width:100px;
+                height:auto;
+            }
+    
+            .right-nav {
+                display: flex;
+                gap: 40px;
+                margin:20px 0 0 0;
+    
+                a {
+                    position: relative;
+                    z-index:10;
+                    text-decoration: none;
+                    color: $white_color;
+                    font-size: 20px;
+                    font-weight: 300;
+                    cursor: pointer;
+    
+                        &::before {
+                            content:'';
+                            display: block;
+                            width:30px;
+                        }
+        
+                        &::before:hover{
+                            border-bottom:3px solid $secondary_color;
+                            transition:0.5s;
+                        }
+                        
+                        &:hover {
+                            color:$secondary_color;
+                            transition:0.5s;
+                        }
+                }
+    
+                button {
+                    font-family: $header_font;
+                    background: $light-blue;
+                    color: $white_color;
+                    border:none;
+                    border-radius: 5px;
+                    padding: 0 20px 3px 20px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    height:35px;
+    
+                    &:hover {
+                        color:$primary-color;
+                        background: $secondary_color;
+                        transition:0.5s;
+                    }
+                }
+            }
+        }
+    }
+    //Behind the scenes
+    .bts {
+        width:100vw;
+        height:100vh;
+        background: $white_color;
+        position: relative;
+        z-index: -1;
+
+            h1 {
+                font-size:3.5rem;
+                text-align: center;
+                padding:40px 0 0 0;
+                color: $secondary_color;
+            }
+
+            p {
+                width:50%;
+                font-size:1.2rem;
+                text-align: center;
+                padding:5px 0 0 0;
+                margin: 0 0 0 25%;
+                color: $secondary_color
+            }
+
+            .gallery {
+                display: flex;
+                margin:0 0 0 13%;
+
+                    img {
+                        margin:30px 0 0 4%;
+                        width:250px;
+                    }
+
+                    .background-box {
+                        width:60vw;
+                        height:200px;
+                        background: $primary-color;
+                    }
+            }
+    }
+}

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body .landing-page {
+  position: relative;
+  z-index: -2;
+  width: 100vw;
+  height: 120vh;
+  background: #101727;
+}
+
+body .landing-page .building {
+  position: relative;
+  z-index: -1;
+  right: 180px;
+  bottom: 60vh;
+  width: 120vw;
+}
+
+body .landing-page .landing-container {
+  position: relative;
+  z-index: 99;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .landing-page .landing-container .landing-logo {
+  width: 150px;
+  margin: 30px 0 5px 44%;
+}
+
+body .landing-page .landing-container h1 {
+  width: 50%;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+body .landing-page .landing-container span {
+  color: #F86302;
+  -webkit-animation: changeColor 10s infinite;
+          animation: changeColor 10s infinite;
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    color: #F86302;
+  }
+  50% {
+    color: #f8ae02;
+  }
+  100% {
+    color: #f80202;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #F86302;
+  }
+  50% {
+    color: #f8ae02;
+  }
+  100% {
+    color: #f80202;
+  }
+}
+
+body .landing-page .landing-container p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 30px 0 10px 20%;
+  text-align: center;
+  line-height: 25px;
+}
+
+body .landing-page .landing-container input {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0 10px 25%;
+  height: 40px;
+  width: 45vw;
+  text-indent: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+body .landing-page .landing-container input:focus {
+  outline: none;
+}
+
+body .landing-page .landing-container button {
+  position: relative;
+  right: 95px;
+  padding: 5px 20px;
+  background: #003F7D;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+body .landing-page .landing-container .details {
+  position: absolute;
+  z-index: 1;
+  margin: 50px 0 0 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: space-between;
+          flex-direction: space-between;
+  gap: 50px;
+}
+
+body .landing-page .landing-container .details h1 {
+  font-size: 4rem;
+}
+
+body .landing-page nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0 0 0;
+}
+
+body .landing-page nav img {
+  width: 100px;
+  height: auto;
+}
+
+body .landing-page nav .right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin: 20px 0 0 0;
+}
+
+body .landing-page nav .right-nav a {
+  position: relative;
+  z-index: 10;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+body .landing-page nav .right-nav a::before {
+  content: '';
+  display: block;
+  width: 30px;
+}
+
+body .landing-page nav .right-nav a::before:hover {
+  border-bottom: 3px solid #F86302;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .landing-page nav .right-nav a:hover {
+  color: #F86302;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .landing-page nav .right-nav button {
+  font-family: "Poppins", sans-serif;
+  background: #003F7D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px 3px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 35px;
+}
+
+body .landing-page nav .right-nav button:hover {
+  color: #101727;
+  background: #F86302;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .bts {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+body .bts h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 40px 0 0 0;
+  color: #F86302;
+}
+
+body .bts p {
+  width: 50%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5px 0 0 0;
+  margin: 0 0 0 25%;
+  color: #F86302;
+}
+
+body .bts .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 13%;
+}
+
+body .bts .gallery img {
+  margin: 30px 0 0 4%;
+  width: 250px;
+}
+/*# sourceMappingURL=style.css.map */

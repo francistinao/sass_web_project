@@ -183,11 +183,11 @@ body {
                     font-size: 20px;
                     height:35px;
     
-                    &:hover {
-                        color:$primary-color;
-                        background: $secondary_color;
-                        transition:0.5s;
-                    }
+                        &:hover {
+                            color:$primary-color;
+                            background: $secondary_color;
+                            transition:0.5s;
+                        }
                 }
             }
         }
@@ -212,7 +212,7 @@ body {
                 font-size:1.2rem;
                 text-align: center;
                 padding:5px 0 0 0;
-                margin: 0 0 0 25%;
+                margin: 0 0 30px 25%;
                 color: $secondary_color
             }
 

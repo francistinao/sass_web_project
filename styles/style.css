@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,11 +16,11 @@ body {
 body .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 99;
 }
 
 body .landing-page {
-  position: relative;
-  z-index: -2;
   width: 100vw;
   height: 120vh;
   background: #101727;
@@ -119,6 +120,12 @@ body .landing-page .landing-container button {
   border-radius: 20px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+}
+
+body .landing-page .landing-container button:hover {
+  background: #F86302;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 body .landing-page .landing-container .details {
@@ -235,6 +242,8 @@ body .bts p {
 }
 
 body .bts .gallery {
+  position: relative;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,27 +255,114 @@ body .bts .gallery img {
   width: 250px;
 }
 
-body .bts .gallery img:hover {
-  position: relative;
-  bottom: 15px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 body .bts .background-box {
-  width: 70vw;
-  height: 60vh;
+  width: 80vw;
+  height: 50vh;
   background: #101727;
   position: relative;
   z-index: -1;
   bottom: 30vh;
-  left: 11%;
+  left: 6%;
   border-radius: 20px;
 }
 
-body .courses {
+body .about {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   background-color: #fff;
+  margin: 20px 0 0 0;
+}
+
+body .about .about-title {
+  font-size: 40px;
+  text-align: center;
+  display: block;
+  background: #F86302;
+  width: 300px;
+  border-radius: 20px;
+  color: #fff;
+  margin: 28vh 0 20px 39%;
+}
+
+body .about h4 {
+  width: 53%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5px 0 0 0;
+  margin: 0 0 30px 25%;
+  color: #F86302;
+}
+
+body .about .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .about .about-container .about-left-section {
+  height: 20vh;
+  width: 50%;
+}
+
+body .about .about-container .about-left-section p {
+  font-size: 23px;
+  color: #101727;
+  padding: 15% 0 0 0;
+}
+
+body .about .about-container .about-right-section {
+  height: 20vh;
+  width: 50%;
+}
+
+body .about .about-container .about-right-section img {
+  width: 70vw;
+  padding: 0 50% 0 0;
+}
+
+body .about .about-container .about-right-section h1 {
+  width: 100%;
+  font-size: 58px;
+  font-weight: 700;
+  color: #F86302;
+  position: relative;
+  right: 10%;
+  bottom: 42%;
+}
+
+body .about .about-container .about-right-section h2 {
+  width: 100%;
+  font-size: 20px;
+  color: #F86302;
+}
+
+body .about .about-container .about-right-section .mecha-location {
+  position: relative;
+  bottom: 44%;
+  right: 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .about .about-container .about-right-section .mecha-location img {
+  width: 18px;
+  height: 20px;
+  position: relative;
+  left: 1px;
+}
+
+body .about .about-container .about-right-section .mecha-location p {
+  font-size: 18px;
+  color: #F86302;
+  padding: 0 0 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

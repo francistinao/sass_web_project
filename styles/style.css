@@ -320,8 +320,10 @@ body .about .about-container .about-right-section {
 }
 
 body .about .about-container .about-right-section img {
-  width: 70vw;
-  padding: 0 50% 0 0;
+  width: 80vw;
+  position: relative;
+  right: 20vw;
+  bottom: 45vh;
 }
 
 body .about .about-container .about-right-section h1 {
@@ -330,8 +332,6 @@ body .about .about-container .about-right-section h1 {
   font-weight: 700;
   color: #F86302;
   position: relative;
-  right: 10%;
-  bottom: 42%;
 }
 
 body .about .about-container .about-right-section h2 {
